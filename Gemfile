@@ -12,6 +12,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use webpack to bundle assets
+gem 'webpack-rails'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -43,3 +46,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Ruby version
 ruby "2.3.2"
+
+gem 'foreman'
