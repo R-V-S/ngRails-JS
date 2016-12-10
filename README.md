@@ -1,6 +1,6 @@
 # ngRails (JS)
 
-An easy starter project for a Rails 5 / Angular 2 build. This is the JavaScript version. There will also be a TypeScript version. Features:
+An easy starter project for a Rails 5 / Angular 2 build. This is the JavaScript version. There is also a [TypeScript version](https://github.com/R-V-S/ngRails). Features:
 
 * [webpack](https://webpack.github.io/) serves assets.
 * [Babel](https://babeljs.io) enables ES6/7 JavaScript language features using the [Latest preset](https://babeljs.io/docs/plugins/preset-latest/).
