@@ -55,7 +55,7 @@ Angular's files are contained in `app/client`. No testing platform is installed.
 
 Templates and stylesheets should be required inline rather than using Angular's `templateUrl` or `styleUrls`.
 
-Stylesheets for components _must_ end in `.component.css` or `.component.scss`. This is because component stylesheets, which are included inline must be run through Babel's [raw loader](https://github.com/webpack/raw-loader).
+Stylesheets for components _must_ end in `.component.css` or `.component.scss`. This is because component stylesheets, which are included inline, must be run through Babel's [raw loader](https://github.com/webpack/raw-loader).
 
 ### Webpack
 
