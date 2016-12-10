@@ -1,4 +1,4 @@
-# ngRails (JS)
+# ngRails (JavaScript)
 
 An easy starter project for a Rails 5 / Angular 2 build. This is the JavaScript version. There is also a [TypeScript version](https://github.com/R-V-S/ngRails). Features:
 
