@@ -29,7 +29,7 @@ var config = {
   },
 
   resolve: {
-    root: path.join(__dirname, '..', 'webpack')
+    root: path.join(__dirname, '..', 'app/client')
   },
 
   plugins: [
@@ -45,6 +45,7 @@ var config = {
 
   module: {
     loaders: [
+      // Run js files through Babel
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
@@ -54,6 +55,24 @@ var config = {
           plugins: ['transform-decorators-legacy'],
           cacheDirectory: true
         }
+      },
+      // Run html files through a raw loader so that they can be inserted
+      // inline in components
+      {
+        test: /\.htm(l)?/,
+        loader: 'raw-loader'
+      },
+      // Run css/scss files that end in 'component.css' or 'component.scss'
+      // through a raw loader so that they can be inserted inline in components
+      {
+        test: /\.component\.(css|scss)$/i,
+        loaders: ['raw-loader', 'sass-loader']
+      },
+      // Run css/scss files that do not have '.component.' in the filename
+      // through the standard loader for global import
+      {
+        test: /^(?!.*component\.(s)?css$).*\.(s)?css$/i,
+        loaders: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   }
