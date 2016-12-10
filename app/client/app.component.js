@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'my-app',
-  template: `<h1>Hello {{name}}</h1>`,
+  template: require('./app.component.html'),
+  styles: [require('./app.component.scss')]
 })
 export class AppComponent  {
   constructor() {
