@@ -1,24 +1,8 @@
-# README
+# Rails 5 / Angular 2 Starter Project: JS Version
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+An easy starter project for a Rails 5 / Angular 2 build. This is the JavaScript version. There is also a TypeScript version. Features:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Uses Webpack to serve assets
+* Runs locally with Foreman
+* Deploys easily to Heroku
+* Is as lean as possible
