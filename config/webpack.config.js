@@ -51,7 +51,8 @@ var config = {
         loader: 'babel-loader',
         query: {
           presets: ['latest'],
-          plugins: ['transform-decorators-legacy']
+          plugins: ['transform-decorators-legacy'],
+          cacheDirectory: true
         }
       }
     ]
