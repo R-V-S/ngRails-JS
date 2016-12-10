@@ -88,7 +88,7 @@ heroku create
 ```sh
 heroku buildpacks:add --index 1 heroku/nodejs
 heroku buildpacks:add --index 2 heroku/ruby
-heroku buildpacks:add --index 3https://github.com/febeling/webpack-rails-buildpack.git
+heroku buildpacks:add --index 3 https://github.com/febeling/webpack-rails-buildpack.git
 ```
 
 ### Push your code / Deploy
