@@ -14,7 +14,7 @@ var production = process.env.NODE_ENV === 'production';
 var config = {
   entry: {
     // Sources are expected to live in $app_root/webpack
-    'application': './webpack/application.js'
+    'application': './app/client/main.js'
   },
 
   output: {
@@ -41,7 +41,21 @@ var config = {
       chunks: false,
       modules: false,
       assets: true
-    })]
+    })],
+
+  module: {
+    loaders: [
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader',
+        query: {
+          presets: ['latest'],
+          plugins: ['transform-decorators-legacy']
+        }
+      }
+    ]
+  }
 };
 
 if (production) {
