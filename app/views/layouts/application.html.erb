@@ -4,10 +4,6 @@
     <title>Rails5Angular2</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
-
-    <%= javascript_include_tag *webpack_asset_paths('application', extension: 'js') %>
     <%= stylesheet_link_tag *webpack_asset_paths('application', extension: 'css') %>
 
     <script src="http://localhost:3808/webpack-dev-server.js"></script>
@@ -15,5 +11,6 @@
 
   <body>
     <%= yield %>
+    <%= javascript_include_tag *webpack_asset_paths('application', extension: 'js') %>
   </body>
 </html>
